@@ -21,3 +21,15 @@ class Person extends Human{
 const Details = new Person();
 Details.printmyName();
 Details.printHuman();
+
+
+// ES7  how to declare class
+
+class Human{
+  gender = 'male';
+  printGender = () => {
+    console.log(this.gender);
+  }
+}
+const humanPrint = new Human();
+humanPrint.printGender();
